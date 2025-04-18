@@ -1,0 +1,57 @@
+
+npm run start:dev --watch => update server mỗi khi update code
+
+dist
+	.js : code typescript -> để nodejs chạy được -> cần dịch code về ts
+	.ts : Define data type
+	.js.map : code js, debug được
+node_modules : 
+src : 
+	Chủ yếu code typescript (vậy mới oop được)
+		JavaScript không có type system nên nó không hỗ trợ mạnh tính trừu tượng 
+		(abstraction) hay interface rõ ràng.
+	
+		✅ TypeScript là OOP hơn vì:
+		✔ Có hệ thống kiểu tĩnh (static typing)
+		✔ Có interface, abstract class, access modifiers	
+test : 
+	Viết test
+tsconfig.jso : 
+	config typescript, dịch code typescript sang js ntn
+net-cli.json :
+	cmd run mỗi khi run terminal cli
+eslints : 
+	check syntax code typescript
+async function bootstrap() {} khởi động ứng dụng	
+spec.ts : viết test case, (VD : Jest)
+
+quangph
+Quang9994
+mongodb+srv://quangph:Quang9994@cluster0.1kbosm0.mongodb.net/
+
+--no-spec => không gen test file
+
+config dùng dấu * => là lastest version 
+
+NotificationService  a = new NotificationService ()
+a.send("ssss", "sms")
+
+NotificationSender  sender = new SmsSender ()/ EmailSender () ...
+NotificationService a = new(sender)
+a.notify()
+
+Không nên sử dụng param trên url
+Nest chạy từ trên xuống dưới, hạn chế dùng :param vì có thể trùng url
+TH1 :
+get(/abc) => "abc"
+get(:id) => "id"
+localhost/abc => ra "abc"
+
+TH2 :
+get(:id) => "id"
+get(/abc) => "abc"
+localhost/abc => ra "id"
+
+PartialType(DTOCreate) => dto update extend dto create
+
+OmitType : bỏ đi 1, vài field ở dto
